@@ -1,0 +1,16 @@
+﻿<Window x:Class="AdivinarNumero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdivinarNumero"
+        mc:Ignorable="d"
+        Title="Adivina el número" Height="450" Width="800" Icon=" 128.ico">
+    <Grid>
+        <TextBox x:Name="RespuestaTextBox" HorizontalAlignment="Left" Height="31" Margin="91,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Que número piensas que es ?" FontWeight="Bold" FontSize="48"/>
+        <Button x:Name="ComprobarButton" Content="Comprobar&#xD;&#xA;" HorizontalAlignment="Left" Margin="286,176,0,0" VerticalAlignment="Top" Width="119" Height="28" FontWeight="Bold" FontSize="16" Click="ComprobarButton_Click" IsDefault="True"/>
+        <Button x:Name="ReiniciarButton" Content="Reiniciar&#xA;" HorizontalAlignment="Left" Margin="433,176,0,0" VerticalAlignment="Top" Width="115" Height="28" FontWeight="Bold" FontSize="16" Click="ReiniciarButton_Click" IsCancel="True"/>
+        <TextBlock x:Name="ResultadoTextBlock" HorizontalAlignment="Left" Margin="91,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="585" FontSize="30" FontWeight="Bold"/>
+    </Grid>
+</Window>
